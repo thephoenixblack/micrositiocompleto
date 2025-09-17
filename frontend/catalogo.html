@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo - Micrositio de Libros</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      padding: 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #555;
+      text-align: justify;
+    }
+    header {
+      background: #222; color: #fff; padding: 10px 20px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    header .logo { font-size: 18px; font-weight: bold; }
+    header .nav-links { list-style: none; display: flex; gap: 15px; }
+    header .nav-links li { display: inline; }
+    header .nav-links a { color: #fff; text-decoration: none; }
+    header .nav-links .active { text-decoration: underline; }
+    footer {
+      text-align: center; padding: 15px; background: #222; color: #fff; margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">📚 MicroSitio Libros</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="catalogo.html" class="active">Catálogo</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+    </ul>
+  </header>
+
+  <!-- Catálogo -->
+  <main>
+    <h1 style="text-align:center; margin:20px 0;">Catálogo de 30 Libros</h1>
+    <section class="catalogo">
+
+      <!-- 1 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg">
+        <h3>Cien años de soledad</h3>
+        <p><em>Gabriel García Márquez</em></p>
+        <p>Resumen (YouTube): Saga de la familia Buendía en Macondo, donde la soledad, el amor y el realismo mágico reflejan la historia latinoamericana.</p>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/10521225-L.jpg">
+        <h3>Don Quijote de la Mancha</h3>
+        <p><em>Miguel de Cervantes</em></p>
+        <p>Resumen (YouTube): Aventuras del caballero que confunde molinos con gigantes y su fiel Sancho, mezcla de humor y crítica social.</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8231856-L.jpg">
+        <h3>1984</h3>
+        <p><em>George Orwell</em></p>
+        <p>Resumen (YouTube): Distopía donde un régimen controla todo, mostrando la fragilidad de la libertad individual frente al Gran Hermano.</p>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8319256-L.jpg">
+        <h3>El principito</h3>
+        <p><em>Antoine de Saint-Exupéry</em></p>
+        <p>Resumen (YouTube): Un niño viajero reflexiona sobre la amistad, el amor y lo esencial de la vida en su recorrido por planetas.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/240727-L.jpg">
+        <h3>Orgullo y prejuicio</h3>
+        <p><em>Jane Austen</em></p>
+        <p>Resumen (YouTube): Elizabeth Bennet y el señor Darcy desafían prejuicios sociales en esta historia romántica e irónica.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/7222246-L.jpg">
+        <h3>Crimen y castigo</h3>
+        <p><em>Fiódor Dostoyevski</em></p>
+        <p>Resumen (YouTube): Raskólnikov asesina y enfrenta el peso moral, explorando culpa, redención y justicia.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/240726-L.jpg">
+        <h3>La Odisea</h3>
+        <p><em>Homero</em></p>
+        <p>Resumen (YouTube): El viaje de Odiseo tras la guerra de Troya, enfrentando monstruos y dioses antes de volver a Ítaca.</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/7222161-L.jpg">
+        <h3>Hamlet</h3>
+        <p><em>William Shakespeare</em></p>
+        <p>Resumen (YouTube): El príncipe de Dinamarca duda entre venganza y justicia en esta tragedia de locura y traición.</p>
+      </div>
+
+      <!-- 9 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8235080-L.jpg">
+        <h3>La divina comedia</h3>
+        <p><em>Dante Alighieri</em></p>
+        <p>Resumen (YouTube): Viaje por infierno, purgatorio y paraíso, símbolo del alma en busca de redención.</p>
+      </div>
+
+      <!-- 10 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/240728-L.jpg">
+        <h3>Los miserables</h3>
+        <p><em>Victor Hugo</em></p>
+        <p>Resumen (YouTube): Jean Valjean busca redención mientras es perseguido por Javert en una Francia marcada por injusticias.</p>
+      </div>
+
+      <!-- 11 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/17463-L.jpg">
+        <h3>Moby Dick</h3>
+        <p><em>Herman Melville</em></p>
+        <p>Resumen (YouTube): La obsesión del capitán Ahab por cazar a la gran ballena blanca simboliza la lucha contra lo imposible.</p>
+      </div>
+
+      <!-- 12 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/10521229-L.jpg">
+        <h3>Ana Karenina</h3>
+        <p><em>León Tolstói</em></p>
+        <p>Resumen (YouTube): Tragedia de una mujer atrapada entre el amor y las normas sociales en la Rusia imperial.</p>
+      </div>
+
+      <!-- 13 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/126093-L.jpg">
+        <h3>Harry Potter y la piedra filosofal</h3>
+        <p><em>J.K. Rowling</em></p>
+        <p>Resumen (YouTube): El inicio de la saga mágica donde Harry descubre que es un mago y enfrenta a Voldemort.</p>
+      </div>
+
+      <!-- 14 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8155415-L.jpg">
+        <h3>El señor de los anillos</h3>
+        <p><em>J.R.R. Tolkien</em></p>
+        <p>Resumen (YouTube): Frodo y la Comunidad deben destruir el Anillo Único en una épica lucha entre el bien y el mal.</p>
+      </div>
+
+      <!-- 15 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8231993-L.jpg">
+        <h3>El hobbit</h3>
+        <p><em>J.R.R. Tolkien</em></p>
+        <p>Resumen (YouTube): Bilbo Bolsón vive una inesperada aventura con enanos y dragones, descubriendo su valentía.</p>
+      </div>
+
+      <!-- 16 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8225631-L.jpg">
+        <h3>Drácula</h3>
+        <p><em>Bram Stoker</em></p>
+        <p>Resumen (YouTube): El conde Drácula busca extender su reinado de terror en Londres, enfrentado por un grupo decidido a detenerlo.</p>
+      </div>
+
+      <!-- 17 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8235089-L.jpg">
+        <h3>Frankenstein</h3>
+        <p><em>Mary Shelley</em></p>
+        <p>Resumen (YouTube): Víctor Frankenstein crea un monstruo, explorando los límites de la ciencia y la soledad.</p>
+      </div>
+
+      <!-- 18 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/240729-L.jpg">
+        <h3>La Iliada</h3>
+        <p><em>Homero</em></p>
+        <p>Resumen (YouTube): Relato de la guerra de Troya y la ira de Aquiles, símbolo de honor y tragedia.</p>
+      </div>
+
+      <!-- 19 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/10521231-L.jpg">
+        <h3>Madame Bovary</h3>
+        <p><em>Gustave Flaubert</em></p>
+        <p>Resumen (YouTube): Emma Bovary busca escapar del tedio matrimonial en un mundo de ilusiones románticas que la destruyen.</p>
+      </div>
+
+      <!-- 20 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8225299-L.jpg">
+        <h3>El retrato de Dorian Gray</h3>
+        <p><em>Oscar Wilde</em></p>
+        <p>Resumen (YouTube): Dorian Gray permanece joven mientras su retrato envejece, símbolo de vanidad y decadencia.</p>
+      </div>
+
+      <!-- 21 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/10133946-L.jpg">
+        <h3>Fahrenheit 451</h3>
+        <p><em>Ray Bradbury</em></p>
+        <p>Resumen (YouTube): En un futuro donde los libros están prohibidos, Montag descubre el poder del conocimiento.</p>
+      </div>
+
+      <!-- 22 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/240732-L.jpg">
+        <h3>La metamorfosis</h3>
+        <p><em>Franz Kafka</em></p>
+        <p>Resumen (YouTube): Gregor Samsa despierta convertido en insecto, reflejo del aislamiento humano y la alienación.</p>
+      </div>
+
+      <!-- 23 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/6979861-L.jpg">
+        <h3>Ulises</h3>
+        <p><em>James Joyce</em></p>
+        <p>Resumen (YouTube): Un día en la vida de Leopold Bloom en Dublín, un viaje literario de conciencia y lenguaje innovador.</p>
+      </div>
+
+      <!-- 24 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/12691-L.jpg">
+        <h3>En busca del tiempo perdido</h3>
+        <p><em>Marcel Proust</em></p>
+        <p>Resumen (YouTube): Una exploración de la memoria, el amor y la sociedad francesa en una de las novelas más largas jamás escritas.</p>
+      </div>
+
+      <!-- 25 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8225143-L.jpg">
+        <h3>Las mil y una noches</h3>
+        <p><em>Anónimo</em></p>
+        <p>Resumen (YouTube): Historias contadas por Sherezade para sobrevivir, mezcla de aventuras, magia y sabiduría.</p>
+      </div>
+
+      <!-- 26 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/240735-L.jpg">
+        <h3>El conde de Montecristo</h3>
+        <p><em>Alexandre Dumas</em></p>
+        <p>Resumen (YouTube): Edmond Dantès busca venganza tras ser traicionado, en una aventura épica de justicia.</p>
+      </div>
+
+      <!-- 27 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/12694-L.jpg">
+        <h3>El nombre de la rosa</h3>
+        <p><em>Umberto Eco</em></p>
+        <p>Resumen (YouTube): Un misterio medieval en una abadía donde la verdad y el poder chocan en torno a libros prohibidos.</p>
+      </div>
+
+      <!-- 28 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8231859-L.jpg">
+        <h3>Alicia en el país de las maravillas</h3>
+        <p><em>Lewis Carroll</em></p>
+        <p>Resumen (YouTube): Alicia cae en un mundo de fantasía lleno de personajes extraños, mezcla de lógica y absurdo.</p>
+      </div>
+
+      <!-- 29 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8235076-L.jpg">
+        <h3>Peter Pan</h3>
+        <p><em>J.M. Barrie</em></p>
+        <p>Resumen (YouTube): El niño que no quería crecer viaja al País de Nunca Jamás, símbolo de inocencia y libertad.</p>
+      </div>
+
+      <!-- 30 -->
+      <div class="card">
+        <img src="https://covers.openlibrary.org/b/id/8231848-L.jpg">
+        <h3>El alquimista</h3>
+        <p><em>Paulo Coelho</em></p>
+        <p>Resumen (YouTube): Santiago emprende un viaje en busca de un tesoro, descubriendo su propia “leyenda personal”.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Micrositio Libros — Proyecto académico</p>
+  </footer>
+
+</body>
+</html>

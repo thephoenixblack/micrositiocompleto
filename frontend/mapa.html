@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa de Recetas</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Origen de nuestras recetas</h1>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Crear mapa centrado en Colombia
+    var map = L.map('map').setView([4.7110, -74.0721], 6);
+
+    // Añadir capa de OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // --- Puntos A, B y C ---
+    var puntos = [
+      {
+        nombre: "Punto A - MEXICO",
+        coords: [23.634501, -102.552784],
+        descripcion: "Capital de Colombia, origen de la receta A."
+      },
+      {
+        nombre: "Punto B - ESPAÑA",
+        coords: [40.463667, -3.74922],
+        descripcion: "Ciudad de la eterna primavera, origen de la receta B."
+      },
+      {
+        nombre: "Punto C - ROMA ",
+        coords: [41.89193,  12.51133],
+        descripcion: "Capital de la salsa, origen de la receta C."
+      }
+    ];
+
+    // Añadir marcadores
+    puntos.forEach(function(p) {
+      L.marker(p.coords).addTo(map)
+        .bindPopup("<b>" + p.nombre + "</b><br>" + p.descripcion);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Micrositio de Libros</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.unsplash.com/photo-1512820790803-83ca734da794") no-repeat center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .hero a {
+            background: #007BFF;
+            padding: 12px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        
+        .hero a:hover {
+            background: #0056b3;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        
+        .feature {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="mapa.html">Mapa</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenido al Micrositio de Libros</h1>
+        <p>Descubre nuestro catálogo, contáctanos y encuentra librerías cercanas.</p>
+        <a href="catalogo.html">📚 Ver Catálogo</a>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>📖 Catálogo</h3>
+            <p>Explora todos nuestros libros disponibles con detalles completos.</p>
+            <a href="catalogo.html" class="btn">Ver Catálogo</a>
+        </div>
+        <div class="feature">
+            <h3>✉️ Contacto</h3>
+            <p>¿Tienes dudas o sugerencias? Escríbenos directamente.</p>
+            <a href="contacto.html" class="btn">Ir a Contacto</a>
+        </div>
+        <div class="feature">
+            <h3>🗺️ Mapa</h3>
+            <p>Encuentra librerías y bibliotecas cercanas en un mapa interactivo.</p>
+            <a href="mapa.html" class="btn">Ver Mapa</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>📚 Micrositio de Libros | Creado con ❤️ en 2025</p>
+    </footer>
+</body>
+
+</html>

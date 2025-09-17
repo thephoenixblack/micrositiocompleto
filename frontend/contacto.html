@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Micrositio de Libros</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">📚 MicroSitio Libros</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <h1>Contacto</h1>
+    <form id="contactForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+
+    <!-- Aquí se mostrará la respuesta -->
+    <div id="resultado" style="margin-top:15px; color:green; font-weight:bold;"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Micrositio Libros — Proyecto académico</p>
+  </footer>
+
+  <!-- Script de simulación -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById("nombre").value;
+      const email = document.getElementById("email").value;
+      const mensaje = document.getElementById("mensaje").value;
+
+      document.getElementById("resultado").innerHTML =
+        "✅ Gracias, <strong>" + nombre + "</strong>. Tu mensaje ha sido enviado ";
+
+      this.reset(); // Limpia el formulario
+    });
+  </script>
+</body>
+</html>
+
